@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(235, 127, 4);
+}
+
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 540px;
+    --bs-breakpoint-md: 720px;
+    --bs-breakpoint-lg: 960px;
+    --bs-breakpoint-xl: 1140px;
+    --bs-breakpoint-xxl: 1320px;
+  }
+
+.container {
+    width: 100% !important;
+    margin: 0 auto;
+}
+
+.content{
+    padding: 40px 10px;
+}
+
+.image-container{
+    width: 100%;
+    height: auto;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.first-header{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.accessible{
+    color: #f1f1f1;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 3rem 0 0 0;
+}
+
+.first-paragraph,
+.second-paragraph{
+    color: #e2dcdc;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.download-store{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3rem 0 0 0;
+}
+
+.text-container {
+    margin: 3rem 0 0 0;
+}
+
+.freepik{
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.freepik span{
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: var(--bs-breakpoint-sm) !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: var(--bs-breakpoint-md) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: var(--bs-breakpoint-lg) !important;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        width: 100%;
+        
+    }
+    .image-container{
+        max-width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: var(--bs-breakpoint-xl) !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: var(--bs-breakpoint-xxl) !important;
+    }
+    .footer {
+        width: 100%;
+        height: 15vh;
+    }
+    .text-container {
+        margin: 0;
+    }
+}
